@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 15vh 35vw;
+    font-size: 1.2rem;
+}
+.login-signup {
+    display: flex;
+    flex-direction: row;
+    background-color: #040d2c;
+    color: white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: min-content;
+}
+
+.login-signup a {
+    padding: 1rem 0;
+    width: 9rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.login-signup div {
+    background-color: #242e54;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 1rem 0;
+    width: 9rem;
+    text-align: center;
+}
+
+.form {
+    background-color: #242e54;
+    border-radius: 0rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 3rem;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}
+
+.fields>input, .fields>select {
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.submit {
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.submit>input {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 9rem;
+    border: none;
+    border-radius: 10rem;
+    background-color: #8592c4;
+    color: #040d2c;
+    line-height: 2rem;
+}
+
+.signup-link {
+    align-self: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    color: #8592c4;
+}
+
+.signup-link a {
+    color: white;
+}
+
+.message {
+    position: absolute;
+    z-index: 2;
+    align-self: center;
+    font-size: 1rem;
+    color: #8592c4;
+}

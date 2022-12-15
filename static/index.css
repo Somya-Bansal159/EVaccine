@@ -1,0 +1,135 @@
+.welcome {
+    background-color: #061034;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.welcome>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30vw;
+}
+
+.welcome>div>p:first-child {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0.1rem;
+}
+
+.welcome>div>p:nth-child(2) {
+    color: #9aa6eb;
+    font-size: 1.2rem;
+    margin: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.welcome a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: rgb(175, 113, 5);
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    margin: 0.2rem;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.welcome>img {
+    width: 30rem;
+    padding: 3rem;
+}
+
+.current-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ded5b2;
+}
+
+.current-stats>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+}
+
+.current-stats>div p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.current-stats>div p:first-child {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.current-stats>div:nth-child(2) {
+    width: 0.1rem;
+    background-color: black;
+}
+
+.current-stats img {
+    width: 3rem;
+    margin: 1rem;
+}
+
+.search-centers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.search-centers>p:first-child {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.search-centers>p:nth-child(2) {
+    font-size: 1.5rem;
+    color:rgb(59, 59, 59);
+    margin: 0.5rem;
+}
+
+select {
+    margin-top: 1rem;
+    width: 16rem;
+    height: 3rem;
+    /* padding: 0.3rem; */
+    font-size: 1.3rem;
+    border-radius: 0.9rem;
+    padding-left: 0.5rem;
+}
+
+.search-centers button {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.4rem;
+    border-radius: 1.2rem;
+    padding: 0rem 1.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: #12215a;
+    border: none;
+    transition: 0.15s ease-out;
+}
+
+.search-centers button:hover {
+    transform: scale(1.02);
+    background-color: #061034;
+}
+
+.search-centers button:active {
+    transform: scale(1);
+    background-color: #020923;
+}

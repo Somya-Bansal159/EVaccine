@@ -1,0 +1,80 @@
+.vaccine-user, .slot-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vaccine-user {
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.vaccine-user>div:first-child {
+    font-size: 1.5rem;
+    color: #040d2c;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.dropdown ul {
+    min-width: 0;
+}
+
+.slot-center {
+    justify-content: space-evenly;
+    margin-top: 7rem;
+}
+
+.slot {
+    font-size: 1.2rem;
+    color:#040d2c;
+    font-weight: 500;
+}
+
+form {
+    background-color: #242e54;
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+form>div:first-child {
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    font-size: larger;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}
+
+.fields>input, .fields>select {
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.submit {
+    align-self: center;
+    margin: 2rem;
+}
+
+.submit>input {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 12rem;
+    border: none;
+    border-radius: 10rem;
+    background-color: #8592c4;
+    color: #040d2c;
+    line-height: 2rem;
+}

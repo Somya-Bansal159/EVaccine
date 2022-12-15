@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'signin.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-signup">
+            <div class="signup">
+                Register
+            </div>
+            <a href="/signin/" class="login">
+                Log In
+            </a>
+        </div>
+        <div class="form">
+            <form action="/signup/" method="post">
+                {% csrf_token %}
+                <div role="alert" class="message">
+                    {{ error }}
+                </div>
+
+                <div class="fields">
+                        <label for="username">Username:</label>
+                        <input id="username" type="text" placeholder="Create a Username" name="username" required>
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" placeholder="Create a Password" name="password" required>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="name" required>
+                        <label for="email">Email ID:</label>
+                        <input id="email" type="email" name="email" required>
+                        <label for="date">Date of Birth:</label>
+                        <input id="date" type="date" name="dob" required>
+                        <label for="city">City:</label>
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected>Choose Your City</option>
+                            <optgroup label="A">
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="A3">A3</option>
+                            </optgroup>
+                            <optgroup label="B">
+                                <option value="B1">B1</option>
+                                <option value="B2">B2</option>
+                                <option value="B3">B3</option>
+                            </optgroup>
+                            <optgroup label="C">
+                                <option value="C1">C1</option>
+                                <option value="C2">C2</option>
+                                <option value="C3">C3</option>
+                            </optgroup>
+                        </select>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Choose Your Gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="O">Others</option>
+                        </select>
+                        <label for="vaccine">Vaccine:</label>
+                        <select id="vaccine" name="vaccine" required>
+                            <option value="" disabled selected>Choose Your Vaccine</option>
+                            <option value="Covaxin">Covaxin</option>
+                            <option value="Covishield">Covishield</option>
+                            <option value="Sputnik V">Sputnik V</option>
+                        </select>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Register">
+                </div>
+
+            </form>
+            <div class="signup-link">
+                Already have an account? <a href="/signin/">Sign in</a>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock content %}

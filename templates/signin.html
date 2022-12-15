@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static 'signin.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-signup">
+            <a href="/signup/" class="signup">
+                Register
+            </a>
+            <div class="login">
+                Log In
+            </div>
+        </div>
+        <div class="form">
+            <form action="/signin/" method="post">
+                {% csrf_token %}
+                {% for message in messages %}
+                <div role="alert" class="message">
+                    {{ message }}
+                </div>
+                {% endfor %}
+
+                <div class="fields">
+                        <label for="username">Username:</label>
+                        <input id="username" type="text" placeholder="Enter Your Username" name="username" required>
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" placeholder="Enter Your Password" name="password" required>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Login">
+                </div>
+
+            </form>
+            <div class="signup-link">
+                Not a member? <a href="/signup/">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock content %}

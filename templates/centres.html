@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <title>Centres</title>
+    <link rel="stylesheet" href="{% static 'centres.css' %}">
+</head>
+
+<body>
+    <div class="search-centers">
+        <p>Search Your Nearest Vaccination Center</p>
+        <p>Get a preview list of the nearest centers</p>
+        <form action="/centres/" method="post">
+            {% csrf_token %}
+            <select name="city" required>
+                <option value="" disabled selected>Select Centres by District</option>
+                <optgroup label="A">
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                </optgroup>
+                <optgroup label="B">
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                </optgroup>
+                <optgroup label="C">
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                </optgroup>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="availability">
+        <div>Center Name</div>
+        <div>Covaxin</div>
+        <div>Covishield</div>
+        <div>Sputnik V</div>
+        {% for center in centers %}
+            <div>{{center.0}}</div>
+            <div>
+                {% if center.1 == "yes" %}
+                <img src="{% static 'images/green_tick.png' %}" alt="yes">
+                {% else %}
+                <img src="{% static 'images/red_cross.png' %}" alt="no">
+                {% endif %}
+            </div>
+            <div>
+                {% if center.2 == "yes" %}
+                <img src="{% static 'images/green_tick.png' %}" alt="yes">
+                {% else %}
+                <img src="{% static 'images/red_cross.png' %}" alt="no">
+                {% endif %}
+            </div>
+            <div>
+                {% if center.3 == "yes" %}
+                <img src="{% static 'images/green_tick.png' %}" alt="yes">
+                {% else %}
+                <img src="{% static 'images/red_cross.png' %}" alt="no">
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <script>
+        document.getElementById("nav2").setAttribute("style", "color:white;")
+    </script>
+</body>
+{% endblock content %}

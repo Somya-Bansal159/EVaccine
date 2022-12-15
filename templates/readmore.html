@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <title>Read More</title>
+    <link rel="stylesheet" href="{% static 'readmore.css' %}">
+</head>
+
+<body>
+    <div class="intro">
+        <p>Everything You Need to Know About the Deadly Coronavirus</p>
+        <img src="{% static 'images/advisor.png' %}" alt="Coronavirus Advisor">
+    </div>
+    <div class="heading">
+        <div></div>
+        <p>What is Coronavirus?</p>
+    </div>
+    <div class="content">
+        <p>
+            Coronaviruses are a large family of viruses that are known to cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). Direct person-to-person respiratory transmission is the primary means of transmission. It is thought to occur mainly through close-range contact (ie, within approximately six feet or two meters) via respiratory particles; virus released in the respiratory secretions when a person with infection coughs, sneezes, or talks can infect another person if it is inhaled or makes direct contact with the mucous membranes. Infection might also occur if a person's hands are contaminated by these secretions or by touching contaminated surfaces and then they touch their eyes, nose, or mouth, although contaminated surfaces are not thought to be a major route of transmission.<br><br>
+            The precise interval during which an individual with SARS-CoV-2 infection can transmit infection to others is uncertain. The potential to transmit SARS-CoV-2 begins prior to the development of symptoms and is highest early in the course of illness; the risk of transmission decreases thereafter. Transmission after 7 to 10 days of illness is unlikely, particularly for otherwise immunocompetent patients with nonsevere infection.<br><br>
+            The risk of transmission from an individual with SARS-CoV-2 infection varies by the type and duration of exposure, use of preventive measures, and likely individual factors (eg, the amount of virus in respiratory secretions). Many individuals do not transmit SARS-CoV-2 to anyone else, and epidemiologic data suggest that the minority of index cases result in the majority of secondary infections.<br><br>
+            The risk of transmission after contact with an individual with COVID-19 increases with the closeness and duration of contact and appears highest with prolonged contact in indoor settings.<br>
+        </p>
+    </div>
+    <div class="heading">
+        <div></div>
+        <p>Covid-19 Waves!</p>
+    </div>
+    <div class="content">
+        <p>
+            So far during the pandemic, several factors have had an impact on whether new COVID-19 cases are increasing or declining in particular locations. These factors include the effectiveness of vaccines over time, human behavior, infection prevention policies, changes to the coronavirus itself, and the number of people who are vulnerable because they have not developed some immunity, whether from natural infection or through vaccination.<br><br>
+            India has been recently struck by the 3rd wave of covid 19 pandemic. The daily cases and deaths peaked at more than 400,000 cases and 4000 deaths respectively, almost four to five times higher than the peak number of cases and deaths in the first wave. Furthermore, research on epidemics has shown a cyclical behavioral response with respect to the disease; that is, more disease leads to more demand for self-protection, in turn leading to less disease; however, this results in less self-protection, which then leads to more disease.<br><br>
+            Therefore as the cases of covid 19 in India are stabilizing, people should be careful and take self precautions to stop the further spread of this deadly virus.<br>
+        </p>
+    </div>
+    <div class="heading">
+        <div></div>
+        <p>Reveal the secrets behind its recent spread...</p>
+    </div>
+    <div class="content">
+        <p>
+            Experts say SARS-CoV-2 originated in bats. That's also how the coronaviruses behind Middle East respiratory syndrome (MERS) and severe acute respiratory syndrome (SARS) got started.<br><br>
+            SARS-CoV-2 made the jump to humans at one of Wuhan's open-air "wet markets." They're where customers buy fresh meat and fish, including animals that are killed on the spot.<br><br>
+            Some wet markets sell wild or banned species like cobras, wild boars, and raccoon dogs. Crowded conditions can let viruses from different animals swap genes. Sometimes the virus changes so much it can start to infect and spread among people.<br><br>
+            Still, the Wuhan market didn't sell bats at the time of the outbreak. That's why early suspicion also fell on pangolins, also called scaly anteaters, which are sold illegally in some markets in China. Some coronaviruses that infect pangolins are similar to SARS-CoV-2.<br><br>
+            As SARS-CoV-2 spread both inside and outside China, it infected people who have had no direct contact with animals. That meant the virus is transmitted from one human to another. It's now spreading in the U.S. and around the globe, meaning that people are unwittingly catching and passing on the coronavirus. This growing worldwide transmission is what is now a pandemic.<br>
+        </p>
+    </div>
+    <script>
+        document.getElementById("nav3").setAttribute("style", "color:white;")
+    </script>
+</body>
+{% endblock content %}

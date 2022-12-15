@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <title>About us</title>
+    <link rel="stylesheet" href="{% static 'aboutus.css' %}">
+</head>
+<body>
+    <div class="aim">
+        <h1>What do we aim at?</h1>
+        <p>
+            Our main aim is to make Covid-19 Vaccine Registration facility accessible to every Indian citizen, so that every Indian can get himself/herself registered on this website for vaccination. Vaccination rate in India has already been increased significantly and this website aims at fully vaccinated India by the end of 2023.<br><br>
+            Our website thoroughly explains the registration and vaccination processes due to which there has already been a surge of users. Also, users can easily find the list of vaccination centres nearby which helps them to choose a suitable vaccination centre. Statistics regarding vaccination in various centres is also available so that users can keep themselves updated regarding the same.<br><br>
+            Information related to various vaccines is also provided for the users' ease.<br><br>
+            There are many rumours against onsite registration for covid vaccine in rural areas. So, this website basically will be an open provision for everyone to get vaccinated.<br><br>
+            Also, for those who are keen to know more about the deadly virus, we have provided some articles on our website.<br>
+        </p>
+    </div>
+    <div class="contributor">
+        <h1>Contributor</h1>
+        <div class="somya">
+            <img class="her"
+                 src="{% static 'images/somya.jpg' %}"
+                 alt="Somya Bansal">
+            <div class="developer-content">
+                <p>Somya Bansal</p>
+                <p>Robo-didi and Weird AI</p>
+                <div class="github-linkedin">
+                    <a href="https://github.com/Somya-Bansal159">
+                        <img src="{% static 'images/github.png' %}" alt="Github Profile">
+                    </a>
+                    <a href="https://www.linkedin.com/in/somya-bansal-73b041205/">
+                        <img src="{% static 'images/linkedin.png' %}" alt="Linked In Profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("nav4").setAttribute("style", "color:white;")
+    </script>
+</body>
+{% endblock content %}
